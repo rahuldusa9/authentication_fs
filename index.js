@@ -11,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'html')));
 app.use('/css', express.static(path.join(__dirname, 'css')));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'html', 'option.html'));
+  });
 // Define routes
 app.get('/signup', (req, res) => {
   res.sendFile(path.join(__dirname, 'html', 'signup.html'));
