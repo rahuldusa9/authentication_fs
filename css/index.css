@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to top, cyan, white);
+    height: 90vh;
+}
+.container{
+    display: flex;
+    box-shadow: 0 0 20px 0 grey;
+    flex-direction: column;
+    height: 70vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: rgb(248, 166, 255);
+    padding: 20px;
+    
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+p{
+    align-self: center;
+    margin-top: 5vh;
+}
+button{
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 5vh;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
